@@ -5,12 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Anirudhya Duyti</title>
 </head>
 
-<body>
-    <h1 class="text-6xl text-slate-500"> HI, Welcome</h1>
+<body class="bg-slate-600">
+    <div id="includedHeader"></div>
+    <section class="text-gray-400 bg-gray-900 body-font mt-px">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <h2 class="sm:text-4xl lg:text-5xl text-3xl text-white font-medium title-font mb-2 md:w-2/5">
+                Hi, I'm<br />Anirudhya Duyti<br />
+                <span class="sm:text-4xl text-2xl">Web Developer</span>
+            </h2>
+            <div class="md:w-3/5 md:pl-6 mt-5 md:mt-0">
+                <p class="leading-relaxed text-base">
+                    I'm a Front-End Developer form Bangladesh. I'm love working with React and Tailwind CSS. Also
+                    familiar with MERN Stack development.
+                    <span class="block mt-3">
+                        I'm a fast learner, tech enthusiast, independent employee with attention to detail.
+                        <br />Interested in working on ambitious projects with positive people and available for working
+                        form anywhere or remotely.
+                    </span>
+                </p>
+                <div class="flex md:mt-4 mt-6">
+                    <a class="inline-flex text-white bg-blue-500 border-0 py-1 px-4 focus:outline-none hover:bg-blue-600 rounded font-extrabold"
+                        target="_blank" href="https://drive.google.com/file/d/17oa356REIIO4d2tlUHL3sei-md1WGnCl/view">
+                        My Resume
+                    </a>
+                    <a class="text-blue-400 inline-flex items-center ml-4" href="#contact">Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <div id="includedFooter"></div>
+    <script>
+        $(function () {
+            $("#includedHeader").load("/header.html");
+            $("#includedFooter").load("/footer.html");
+        });
+    </script>
 
 </body>
 
